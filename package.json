@@ -1,0 +1,28 @@
+{
+  "name": "contrato-inteligente",
+  "version": "1.0.0",
+  "description": "Token ERC-20 con OpenZeppelin y Hardhat 3",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:local": "hardhat ignition deploy ./ignition/modules/MiToken.ts --network localhost",
+    "deploy:script": "hardhat run scripts/deploy.ts --network localhost",
+    "test": "hardhat test"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "erc20",
+    "hardhat"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^4.0.0",
+    "hardhat": "^3.21.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}
